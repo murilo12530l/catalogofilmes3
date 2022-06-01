@@ -1,4 +1,5 @@
 import 'dotenv/config' 
+import { con } from './repository/connection.js'
 
 import express from 'express'
 import cors from 'cors'
@@ -13,4 +14,4 @@ server.use(express.json());
 
 
 
-server.listen(process.env.PORT, () => console.log()
+server.listen(process.env.PORT, () => console.log(`API Conectada na Porta ${process.env.PORT}`));
